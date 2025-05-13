@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Testing pacage, no professional just testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maury2707/nodeCourse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maury2707/nodeCourse/issues"
+  },
+  "homepage": "https://github.com/maury2707/nodeCourse#readme",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "type":"module"
+  }
+}
