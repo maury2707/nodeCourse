@@ -4,16 +4,21 @@ typeMap.set("water", { weak_against : "grass", strong_against: "fire"});
 typeMap.set("grass", { weak_against : "fire", strong_against: "water"});
 typeMap.set("fire", { weak_against : "water", strong_against: "grass"});
 
-function print_type(){
-    console.log(typeMap.get("fire"));
-}
+const fight = (fighter1, fighter2) => typeMap.get(fighter1).strong_against === fighter2? 
+    true: false;
 
-print_type();
-/*
-function figth(type, enemy_type){
-    return null;
-}
-
-/* const pokeType = new Promise (function (resolve, reject){
-    if (enemy_type)
+const pokeFight = new Promise (function (resolve, reject){
+    if (fight("water", "grass")){
+        resolve("We Won :3");
+    }else{
+        reject("We Lose :c");
+    }
 });
+
+pokeFight.then((result) => {
+    console.log(result);
+}).catch((error) => {
+    console.log(error);
+}).finally(() => {
+    console.log("Resolved");
+})
