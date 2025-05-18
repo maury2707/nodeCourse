@@ -4,7 +4,7 @@
   "description": "Testing pacage, no professional just testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "callback": "node src/XMLHTTPreq.js"
   },
   "repository": {
     "type": "git",
